@@ -1,0 +1,236 @@
+/* Post Form Container */
+.post-form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #121212; /* Base dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.post-form {
+  width: 60%;
+  background: #121212; /* Ensure dark background is applied here */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px #f1c40f;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.input-field,
+.textarea-field,
+.file-input,
+.input-field.dropdown {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #333; /* Dark input background */
+  color: #fff; /* White text inside input */
+  transition: all 0.3s ease;
+}
+
+/* Ensure consistent dark background for focused fields */
+.input-field:focus,
+.textarea-field:focus,
+.input-field.dropdown:focus {
+  outline: none;
+  border-color: #4CAF50;
+  background-color: #222; /* Darker background on focus */
+}
+
+/* Adjust textarea height */
+.textarea-field {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Button Styling */
+.add-button,
+.submit-button
+ {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50; /* Green buttons */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.upload-button{
+  width: 100%;
+  padding: 15px;
+  background-color: #f1c40f; /* Green buttons */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-button:hover,
+.submit-button:hover
+{
+  background-color: forestgreen;
+}
+.upload-button:hover {
+  background-color: #c29e0d;
+}
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.content-section {
+  margin-bottom: 30px;
+}
+
+.image-upload-section {
+  margin-bottom: 20px;
+}
+
+.image-selected {
+  color: #fff; /* White text for image info */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.file-input {
+  display: none;
+}
+
+.post-preview {
+  width: 35%;
+  background: #121212; /* Consistent dark preview background */
+  padding: 30px;
+  color: #dfdfdf;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f1c40f; /* Green border */
+}
+
+.preview-card {
+  margin-top: 20px;
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.heading2 {
+  color: #ddd; /* Light color for subheadings */
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content-item {
+  margin-bottom: 20px;
+}
+
+.content-item h4 {
+  font-size: 18px;
+  color: #fff; /* White heading inside content item */
+  font-weight: 600;
+}
+
+.content-item p {
+  font-size: 16px;
+  color: #bbb; /* Lighter text for paragraphs */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .post-form-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .post-form {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .post-preview {
+      width: 100%;
+      margin-top: 20px;
+  }
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .post-form-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .post-form {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .post-preview {
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .heading {
+      font-size: 28px;
+  }
+
+  .heading2 {
+      font-size: 18px;
+  }
+
+  .add-button,
+  .submit-button {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .input-field,
+  .textarea-field {
+      font-size: 14px;
+  }
+
+  .image-upload-section,
+  .content-section {
+      margin-bottom: 20px;
+  }
+
+  .upload-button {
+      font-size: 16px;
+  }
+}
+
+/* Dropdown styling */
+.input-field.dropdown option {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #333; /* Dark background for options */
+  color: #fff; /* White text in options */
+}
+
+
+  

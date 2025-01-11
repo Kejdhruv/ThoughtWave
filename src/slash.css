@@ -1,0 +1,189 @@
+/* Base layer with dark background */
+.slash-container {
+    height: 100vh;
+   
+    display: flex;
+    flex-direction: column;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20231228/pngtree-black-textured-abstract-background-with-3d-cubes-image_13890068.png') center/cover no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+}
+
+/* Navbar styling */
+.slash-navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.slash-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slash-logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2c94c;
+    font-family: 'Dethrone', 'Modern sarif';
+}
+
+.slash-nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slash-nav-link {
+    background-color: rgba(0, 0, 0, 1); /* Slightly dark transparent background */
+    backdrop-filter: blur(20px); /* Apply blur effect to background */
+    -webkit-backdrop-filter: blur(8px); /* Transparent background */
+    color: #f2c94c; /* Golden color text */
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+    border: 2px solid #f2c94c; /* Border with golden color */
+    border-radius: 25px; /* Rounded borders */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+    text-transform: uppercase; 
+    margin-left: 10px;
+}
+
+.slash-nav-link:hover {
+    background-color: #f2c94c;  /* Golden background on hover */
+    color: #121212;  /* Dark text color when hovered */
+    border: 2px solid #f2c94c;  /* Keep the border the same */
+    transform: translateY(-2px);  /* Golden hover effect */
+}
+
+
+/* Optional dark overlay to darken the background further */
+.slash-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.8);
+   
+    z-index: 1;
+}
+
+/* Content inside Background */
+.slash-content {
+    left: 15% ; 
+    position: absolute;
+    top: 50%;
+    margin: auto ;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container for both top post and quote */
+.slash-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto ; /* Space between the post and quote section */
+}
+
+/* Top Post Styling */
+.slash-top-post {
+    flex: 1;
+    min-width: 250px; /* Ensure it has a minimum width */
+}
+
+.slash-top-post-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Limit image width */
+    border-radius: 10px;
+}
+
+.slash-top-post-title {
+    font-size: 1.2rem;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+/* Quote Section Styling */
+.slash-quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    flex: 1;
+}
+
+.slash-quote-section blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #FFD700;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    width: 70%; /* Adjusted width for better spacing */
+}
+
+/* Call to Action Section */
+.slash-cta-section {
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.slash-cta-btn {
+    background-color: #FFD700; /* Golden button */
+    color: #121212;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.slash-cta-btn:hover {
+    background-color: #e6c300; /* Darker golden */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 768px) {
+    .slash-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slash-quote-section blockquote {
+        font-size: 1.2rem;
+    }
+
+    .slash-cta-section {
+        text-align: left;
+    }
+
+    .slash-main-content {
+        flex-direction: column; /* Stack the post and quote section vertically */
+    }
+
+    .slash-top-post {
+        margin-bottom: 20px;
+    }
+}
+

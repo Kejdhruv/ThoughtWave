@@ -1,0 +1,228 @@
+/* Overall Profile Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #1e1e1e; /* Dark background */
+}
+
+/* Form Container */
+.profile-edit-form {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #121212; /* Dark background for form */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.profile-edit-form:hover {
+  transform: translateY(-10px);
+}
+
+/* Header Styling */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.submit-button {
+  background-color: #007bff; /* Stay with the blue color */
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Form Fields Layout */
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.photo-section {
+  width: 40%;
+}
+
+.info-section {
+  width: 55%;
+}
+
+/* Individual Form Field */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-field input {
+  padding: 0.8rem;
+  border: 2px solid #444; /* Darker border */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #333; /* Darker background */
+  color: #fff; /* White text */
+  transition: border-color 0.3s ease;
+}
+
+.form-field input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.file-upload {
+  grid-column: span 2;
+}
+
+/* Profile Image Styling */
+.profile-image-small {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.profile-image-small:hover {
+  transform: scale(1.05);
+}
+
+/* Background Image Styling */
+.background-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1rem;
+  border: 3px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.background-image:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for Plus Button beside the label */
+.photo-field label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  color: #fff; /* White text for labels */
+}
+
+.plus-button {
+  background-color: #444; /* Dark button */
+  border: 0.5px solid rgba(0, 0, 74, 0.529);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.form-field3 label{
+  color: white;
+}
+.form-field label{
+  color: white;
+}
+.plus-button:hover {
+  background-color: #0056b3;
+}
+
+/* Password Visibility Toggle */
+.password-container {
+  position: relative;
+}
+
+.password-visibility-toggle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.password-visibility-toggle:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .form-sections {
+    flex-direction: column;
+  }
+
+  .photo-section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .info-section {
+    width: 100%;
+  }
+}
+
+/* About Section Styling */
+.form-field3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-field3 input {
+  resize: vertical;
+  padding: 0.8rem;
+  border: 2px solid #444; /* Dark border */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  transition: border-color 0.3s ease;
+}
+
+.form-field3 input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-field3 label input:focus{
+  color: #0056b3;
+}
+
+
+
+  

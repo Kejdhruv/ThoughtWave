@@ -1,0 +1,195 @@
+/* Overall background and center positioning */
+.Overall1 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), 
+      url('https://t4.ftcdn.net/jpg/09/50/19/79/360_F_950197917_8jlXmDdb6uNMoteub41vDGd9CDCqJBmZ.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling the Login Form Container */
+  .Login-Info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 250px;
+    height: auto;
+    /* backdrop-filter: blur(8px); 
+    background-color: rgba(255, 255, 255, 0.85);  */ 
+    animation: slideIn 0.6s ease-out;
+  }
+  
+  .login-header {
+    font-size: 24px;
+    text-align: center;
+    color: white ; 
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Field Styles */
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .custom-email,
+  .custom-password {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid#4CAF50;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    color: #ffffff; /* White text color for contrast */
+  }
+  
+  .custom-email:focus,
+  .custom-password:focus {
+    border-color: #0056b3; /* Change border color when focused */
+  }
+  
+  /* Label Styles */
+  .custom-label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    padding-left: 5px ;
+    padding-top: 8px ;
+    font-size: 20px;
+    /* White label for contrast */
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  /* Focus Effect on Labels */
+  .custom-email:focus + .custom-label,
+  .custom-password:focus + .custom-label {
+    top: -12px;
+    left: 5px;
+    font-size: 12px;
+    color: #007BFF; /* Blue label color when focused */
+  }
+  
+  .custom-email:not(:placeholder-shown) + .custom-label,
+  .custom-password:not(:placeholder-shown) + .custom-label {
+    top: -12px;
+    left: 5px;
+    font-size: 12px;
+    color: #007BFF; /* Blue label color when filled */
+    font-weight: bold;
+  }
+  
+  /* Label Styles */
+  .custom-label {
+    position: absolute;    top: 12px;
+    left: 10px;
+    font-size: 14px;
+    color: #333;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  /* Submit Button */
+  .btxxnnnnn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .btxxnnnnn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Register Link */
+  .register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .register-link a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation for the form sliding in */
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  /* Welcome User (Advertisement) Styling */
+  #ad {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    color: #003580;
+    text-align: center;
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Login-Info {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .input-group {
+      margin-bottom: 12px;
+    }
+  
+    .btxxnnnnn {
+      width: 100%;
+    }
+  }
+  

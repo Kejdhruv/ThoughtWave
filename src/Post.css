@@ -1,0 +1,303 @@
+body {
+  overflow-x: hidden;
+  background-color: #121212; /* Hide scrollbars */
+}
+body::-webkit-scrollbar {
+  display: none;
+  
+}
+.container1 {
+  display: flex;
+  flex-direction: column ; 
+  background-color: #121212;
+  color: #fff; /* Ensure text is white across the page */
+  justify-content: center;
+
+}
+
+/* Navbar Styling */
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #f2c94c;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar Button Styling */
+.navbar-home-link1, .navbar-profile-link1 {
+  background-color: rgba(0, 0, 0, 1);  /* Slightly dark transparent background */
+  backdrop-filter: blur(20px);  /* Apply blur effect to background */
+  -webkit-backdrop-filter: blur(8px);  /* Transparent background */
+  color: #f2c94c;  /* Golden color text */
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 20px;  /* Adjusted padding for better spacing */
+  border: 2px solid #f2c94c;  /* Border with golden color */
+  border-radius: 25px;  /* Rounded borders */
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+  cursor: pointer;
+  text-transform: uppercase;  /* Make text uppercase */
+}
+
+/* Navbar Button Hover Effect */
+.navbar-home-link1:hover, .navbar-profile-link1:hover {
+  background-color: #f2c94c;  /* Golden background on hover */
+  color: #121212;  /* Dark text color when hovered */
+  border: 2px solid #f2c94c;  /* Keep the border the same */
+  transform: translateY(-2px);  /* Slight lift effect */
+}
+
+/* Focus state to improve accessibility */
+.navbar-home-link1:focus, .navbar-profile-link1:focus {
+  outline: none;  /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(242, 201, 76, 0.7);  /* Subtle glowing outline for focus */
+}
+
+/* Button spacing for better alignment */
+.navbar-links1 {
+  display: flex;
+  gap: 20px;  /* Space between the buttons */
+}
+
+
+/* Navbar Search Section */
+.navbar-search1 {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 25px;
+}
+
+.navbar-search-input1 {
+  padding: 8px;
+  border-radius: 25px;
+  border: none;
+  background-color: #444;
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-right: 10px;
+  width: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-search-input1:focus {
+  background-color: #555;
+}
+
+
+.search-section1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input1 {
+  width: 100%;
+  padding: 8px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+  background-color: #444;
+  color: #fff;
+}
+
+.search-icon1 {
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.search-icon1:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Category Item and Box Styling */
+.category-item1 {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Content Section */
+.Section2 {
+  margin: auto;
+  flex: 1;
+  background-color: #121212; /* Ensure dark background extends throughout */
+}
+
+/* Blog Title Styling */
+.blog-title1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f2c94c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.blog-title-underline1 {
+  width: 60px;
+  height: 5px;
+  background-color: #f2c94c;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Blog Cards */
+.blog-cards1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: auto ; 
+  max-width: 1200px;
+}
+
+.blog-card1 {
+  position: relative;
+  overflow: hidden ; 
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  max-width: 240px;
+  height: 300px;
+}
+
+.blog-card1:hover {
+  transform: translateY(-10px);
+}
+
+/* Image and Title in Blog Cards */
+.blog-image1 {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-radius: 8px 8px 0 0;
+}
+
+.blog-title-box1 {
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  background: transparent;
+  justify-content: flex-start;
+}
+
+.blog-title-box1 h2 {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.blog-category-box1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(169, 169, 169, 0.3);
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Arrow Icon for Cards */
+.arrow-box-icon1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-box-icon1:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.arrow-box-icon1 span {
+  font-size: 20px;
+}
+
+.arrow-box-icon1:hover span {
+  color: #f2c94c;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 1024px) {
+  .blog-cards1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .Section2 {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-cards1 {
+    grid-template-columns: 1fr;
+  }
+
+ 
+  .container1 {
+    flex-direction: column;
+  }
+}
+
+
+.no-posts-message {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+    
+  

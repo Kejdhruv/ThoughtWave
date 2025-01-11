@@ -1,0 +1,114 @@
+.Overall1 {
+    background:  url('https://png.pngtree.com/thumb_back/fw800/background/20231221/pngtree-geometric-elements-on-black-background-image_15546341.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd; /* Light gray text for contrast */
+}
+
+.Login-Info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    width: 350px;
+    backdrop-filter: blur(9.5px); /* Strong blur for a more modern look */
+    background-color: transparent ;  /* Deeper dark background */
+    animation: slideIn 0.8s ease-out;
+}
+
+.loginbox {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.custom-email,
+.custom-password,
+select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 8px; /* Larger border-radius for smoother edges */
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(30, 30, 30, 0.9); /* Even darker input fields */
+    color: #ddd; /* Light text color for inputs */
+}
+
+.custom-email:focus,
+.custom-password:focus,
+select:focus {
+    border-color: rgb(213, 188, 0); /* Bright blue on focus */
+    background-color: rgba(30, 30, 30, 1); /* Slightly darker background on focus */
+}
+
+.custom-label {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    font-size: 14px;
+    color: #aaa; /* Subtle light gray color */
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.custom-email:focus + .custom-label,
+.custom-password:focus + .custom-label,
+select:focus + .custom-label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: rgb(213, 188, 0);; /* Bright blue when focused */
+}
+
+.custom-email:not(:placeholder-shown) + .custom-label,
+.custom-password:not(:placeholder-shown) + .custom-label,
+select:not(:placeholder-shown) + .custom-label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: rgb(213, 188, 0);; /* Bright blue when not empty */
+    font-weight: bold;
+}
+
+.btxxnnnnn {
+    background-color: #000000;
+    border: 0.25px dotted rgb(213, 188, 0); /* Bright blue button */
+    color: #fff;
+    
+    padding: 14px;
+    border-radius: 8px; /* Larger border-radius for buttons */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+    display: block; /* Makes the button full-width */
+}
+
+.btxxnnnnn:hover {
+    background-color: rgb(93, 82, 0 , 0.3); /* Darker blue on hover */
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,204 @@
+/* General container styles */
+.blog-page-container1 {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #121212; /* Dark background */
+    border-radius: 15px; /* Softer, rounder corners */
+    box-shadow: 0 10px 30px #f1c40f; /* Deeper shadow for a floating effect */
+    overflow: hidden;
+}
+
+/* Main content wrapper */
+.blog-content-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased space between sections for a more spacious feel */
+}
+
+/* Blog info section */
+.blog-info-section3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #1a1a1a; /* Dark background */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    position: relative; /* Added position relative for absolute positioning of child elements */
+}
+
+.blog-image-container1 {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px; /* Rounded corners for the image */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around image */
+}
+
+.blog-image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slight rounding for the image itself */
+}
+
+.blog-details-container4 {
+    flex: 2;
+    padding: 15px;
+}
+
+.blog-title4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f2c94c; /* Gold color for title */
+    line-height: 1.3;
+}
+
+.blog-topic6 {
+    font-size: 18px;
+    color: #aaa; /* Light gray for the topic */
+    margin-bottom: 15px;
+}
+
+/* Blog details section styles */
+.blog-details-section2 {
+    flex: 2;
+    background-color: #121212; /* Dark background */
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate from other sections */
+    border-radius: 12px;
+}
+
+.blog-details-section2 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f2c94c; /* Gold color for subheadings */
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.blog-details-section2 p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ddd; /* Light gray for text */
+}
+
+.blog-details-section2 ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.blog-details-section2 ul li {
+    margin-bottom: 25px; /* Added more space between list items */
+}
+
+/* Hover effects for links or important text */
+.blog-title4:hover, 
+.blog-details-section2 h3:hover {
+    color: #4CAF50; /* Green hover color */
+    text-decoration: underline;
+}
+
+/* Loading and error messages */
+.loading-message,
+.error-message {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.loading-message {
+    color: #888; /* Neutral gray for the loading state */
+}
+
+.error-message {
+    background-color: #422e2e; /* Dark red for error message */
+    color: #f8d7da; /* Light red text for visibility */
+    border: 1px solid #f5c6cb; /* Light red border */
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.error-message::before {
+    content: '⚠️';
+    font-size: 20px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .blog-info-section {
+        flex-direction: column;
+    }
+
+    .blog-image-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .blog-details-container {
+        padding: 10px;
+    }
+
+    .blog-details-section {
+        padding: 20px;
+    }
+}
+
+/* Blog author positioning */
+.blog-author {
+    position: absolute; /* Position it relative to the parent container */
+    bottom: 0; /* Align to the bottom */
+    right: 0; /* Align to the right */
+    margin-bottom: 10px; /* Add a little margin for spacing */
+    margin-right: 20px; /* Add right margin to ensure it doesn’t stick to the edge */
+    font-size: 0.9em;
+    color: #f1c40f; /* Green color for author */
+}
+
+.blog-author a {
+    text-decoration: none;
+}
+
+/* Styles for Like Button */
+.like-button-container {
+    margin-top: 10px; /* Slight space below the topic */
+    display: flex;
+   
+  }
+  
+  .like-button {
+    background-color: transparent; /* Dark background */
+    border: none ;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .like-button.liked {
+    
+    color: red ; /* Keep golden border when liked */
+  }
+  
+  .thumb-icon {
+    font-size: 22px; /* Size of the thumbs-up icon */
+    color: #ddd;
+    /* Default color of the icon */
+    transition: color 0.3s ease;
+  }
+  
+  .like-button.liked .thumb-icon {
+    color: #f1c40f /* White icon color when liked */
+  }
+.LikesNumber{
+    color: whitesmoke;
+}
+
+  
